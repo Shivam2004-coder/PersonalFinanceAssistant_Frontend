@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  pointer-events: none;
+}
