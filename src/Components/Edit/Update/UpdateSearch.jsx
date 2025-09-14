@@ -41,7 +41,7 @@ const UpdateSearch = (props) => {
 
     // single delete function
     const handleDelete = async (txn) => {
-        console.log(txn);
+        // console.log(txn);
 
         await handleSubmit(
             { 

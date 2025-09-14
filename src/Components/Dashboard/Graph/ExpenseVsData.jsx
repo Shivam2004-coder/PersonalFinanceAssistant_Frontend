@@ -49,7 +49,7 @@ const ExpenseVsData = () => {
     const formattedStart = formatLocal(startDate);
     const formattedEnd = formatLocal(today);
 
-    console.log("Searching from", formattedStart, "to", formattedEnd);
+    // console.log("Searching from", formattedStart, "to", formattedEnd);
 
     await handleSearch(
       formattedStart,

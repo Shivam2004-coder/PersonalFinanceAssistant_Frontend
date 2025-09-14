@@ -12,7 +12,7 @@ const Edit = () => {
     date: new Date().toISOString().split("T")[0],
   });
 
-  console.log("inside the Edit !",form);
+  // console.log("inside the Edit !",form);
 
   const [loading, setLoading] = useState(false); // new state
   const { handleScanPDF } = useUpload();
@@ -42,7 +42,7 @@ const Edit = () => {
           // Normalize date into YYYY-MM-DD
           let date = new Date(parsedData.date);
           // let normalizedDate = new Date(parsedData.date).toISOString().split("T")[0];
-          console.log(date);
+          // console.log(date);
           // console.log(normalizedDate);
           setForm({
             type: parsedData.type,

@@ -10,13 +10,13 @@ const Header = () => {
     // if ( location.pathname === "/onboarding" ) {
     //   return false;
     // }
-    console.log("Profile in Header: ", (profile && profile.emailId));
+    // console.log("Profile in Header: ", (profile && profile.emailId));
     return profile && profile.emailId;
   };
 
 
-  console.log("location: ", location);
-  console.log("I am in the Header !!!");
+  // console.log("location: ", location);
+  // console.log("I am in the Header !!!");
   
   return (
     // <div className={`flex items-center top-0 justify-between h-20 bg-white/40 backdrop-blur-xs w-full z-20 shadow-[inset_0_-8px_12px_rgba(0,0,0,0.3)]`}>

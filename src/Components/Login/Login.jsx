@@ -43,8 +43,8 @@ const Login = () => {
       navigate("/dashboard");
     } catch (error) {
       const errMessage = error.response?.data?.message || "Something went wrong. Please try again.";
-      console.log(error);
-      console.log("ERROR in handleSignInButton : "+error.message);
+      // console.log(error);
+      // console.log("ERROR in handleSignInButton : "+error.message);
       invalidMessage(errMessage);
     }
   };

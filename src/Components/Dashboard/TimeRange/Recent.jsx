@@ -36,9 +36,9 @@ const Recent = ({ form, setForm }) => {
 
     setForm(updatedForm);
 
-    console.log( "I am in recent Form :" );
-    console.log(updatedForm);
-    console.log()
+    // console.log( "I am in recent Form :" );
+    // console.log(updatedForm);
+    // console.log()
 
     // clear redux old state then trigger search
     dispatch(resetRecentAdded());

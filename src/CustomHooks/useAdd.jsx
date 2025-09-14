@@ -28,7 +28,7 @@ const useAdd = () => {
                 message = "updated"
             }
             else if (which === "delete") {
-                console.log("form : ",form);
+                // console.log("form : ",form);
                 const res = await axios.delete(import.meta.env.VITE_BASE_URL + "transaction/delete", {
                     data: { form }, 
                     withCredentials: true

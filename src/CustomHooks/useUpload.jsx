@@ -5,7 +5,7 @@ const useUpload = () => {
     const handleScanPDF = async (file) => {
         try {
             
-            console.log(file);
+            // console.log(file);
             // const formData = new FormData();
             // formData.append("pdf", file);
 
@@ -19,12 +19,12 @@ const useUpload = () => {
             );
 
 
-            console.log("scan pdf result : ",res);
+            // console.log("scan pdf result : ",res);
             successMessage("Successfully parsed the invoice.");
             return res.data.data;
 
         } catch (error) {
-            console.error("Error in handleScanPDF:", error);
+            // console.error("Error in handleScanPDF:", error);
             errorMessage("Failed to scan the PDF. " + error.message);
         }
     };

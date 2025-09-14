@@ -11,14 +11,14 @@ const useFilter = () => {
                 withCredentials: true
             });
 
-            console.log("Filter response:", res.data);
+            // console.log("Filter response:", res.data);
             // dispatch(event(res.data));
             dispatch(event({ page: page , data: res.data }));
 
             successMessage("Filter applied successfully");
 
         } catch (error) {
-            console.error("Error filtering transactions:", error);
+            // console.error("Error filtering transactions:", error);
             errorMessage("Failed to filter transactions. Please try again.");
         }
     };
