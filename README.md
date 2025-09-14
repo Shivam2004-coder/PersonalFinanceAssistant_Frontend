@@ -1,12 +1,60 @@
-# React + Vite
+# Personal Finance Assistant Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Personal Finance Assistant** is a smart platform designed to help users manage their finances seamlessly. It allows users to authenticate securely, track transactions, visualize financial data with graphs, and even parse PDFs to automatically extract expense details using Google Gemini AI.  
 
-Currently, two official plugins are available:
+This repository contains the **frontend code** built with **React, Redux Toolkit, and Tailwind CSS**, connected to the Node.js + Express backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Google & Manual Login/Signup (JWT-based authentication)  
+- 💸 Add, search, update, and delete transactions  
+- 📊 Interactive expense graphs and insights  
+- 📁 Profile management (view & edit user details)  
+- 📑 PDF parsing via Gemini AI to extract structured transaction data  
+- ✅ Protected routes using JWT stored in localStorage/session  
+- 🌐 Responsive and modern UI with Tailwind CSS  
+
+---
+
+## 🚀 Tech Stack
+
+**Frontend:**  
+- React  
+- Redux Toolkit  
+- Tailwind CSS  
+- React Router DOM  
+- Axios  
+
+**Backend (Connected To):**  
+- Node.js + Express  
+- MongoDB (Mongoose)  
+- JWT Authentication  
+- Google Gemini AI API  
+
+---
+
+
+## 🛠️ Installation & Setup
+
+# 1. Clone the repository
+git clone https://github.com/Shivam2004-coder/PersonalFinanceAssistant_Frontend.git
+cd techtribe-frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Create a .env file in the root directory and add:
+VITE_BASE_URL=http://localhost:3000/
+
+# 4. Run the frontend
+npm run dev
+
+
+### 👤 Author
+Made with 💻 by Shivam Vaishnav
+Feel free to reach out for collaboration or feedback.
+
+### 📄 License
+This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
