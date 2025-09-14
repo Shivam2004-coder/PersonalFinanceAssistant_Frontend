@@ -4,6 +4,11 @@ The **Personal Finance Assistant** is a platform designed to help users manage t
 
 This repository contains the **frontend code** built with **React, Redux Toolkit, and Tailwind CSS**, connected to the Node.js + Express backend.
 
+
+### Video Description of Personal Finance Assistant:
+--- click [here](https://youtu.be/GKfgFFRIe8g). to watch the video
+
+
 ---
 
 ## 🌟 Features
