@@ -58,10 +58,10 @@ const Recent = ({ form, setForm }) => {
         <option value="" disabled>
           Select Range
         </option>
-        <option value="10">Last 10 Transactions</option>
-        <option value="20">Last 20 Transactions</option>
-        <option value="30">Last 30 Transactions</option>
-        <option value="40">Last 40 Transactions</option>
+        <option value="10">Last 10 days</option>
+        <option value="20">Last 20 days</option>
+        <option value="30">Last 30 days</option>
+        <option value="40">Last 40 days</option>
       </select>
     </div>
   );

@@ -15,7 +15,6 @@ const Update = () => {
   return (
     <div>
       <div>
-        <p>Filter Your Search...</p>
         <Filter form={form} setForm={setForm} />
       </div>
       <div>

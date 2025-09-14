@@ -61,6 +61,7 @@ const Filter = (props) => {
             >
               <option value="expense">Expense</option>
               <option value="income">Income</option>
+              <option value="" >Both</option>
             </select>
           </div>
           <div className="flex-1">

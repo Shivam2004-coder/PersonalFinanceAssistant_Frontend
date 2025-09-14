@@ -1,8 +1,8 @@
 import { errorMessage, successMessage } from "../utils/ShowMessage";
 import axios from "axios";
 
-const useAdd = (form, setForm , which) => {
-    const handleSubmit = async () => {
+const useAdd = () => {
+    const handleSubmit = async (form, setForm , which) => {
         try {
 
             if ( which === "add" && (!form || !form.amount || !form.category)) {
@@ -10,6 +10,7 @@ const useAdd = (form, setForm , which) => {
             }
 
             // console.log("Submitting form:", form);
+            let message = "";
             
             if( which === "add" ){
                 const res = await axios.post(
@@ -17,18 +18,22 @@ const useAdd = (form, setForm , which) => {
                     { form },
                     { withCredentials: true }
                 );
+                message = "added"
             }
             else if( which === "update" ){
                 const res = await axios.post( import.meta.env.VITE_BASE_URL + "transaction/update",
                     {form},
                     {withCredentials: true}
                 )
+                message = "updated"
             }
             else if (which === "delete") {
+                console.log("form : ",form);
                 const res = await axios.delete(import.meta.env.VITE_BASE_URL + "transaction/delete", {
                     data: { form }, 
                     withCredentials: true
                 });
+                message = "deleted"
             }
             // console.log(res);
 
@@ -40,11 +45,11 @@ const useAdd = (form, setForm , which) => {
                 note: "",
             });
 
-            successMessage("Transaction added successfully");
+            successMessage(`Transaction ${message} successfully`);
 
         } catch (error) {
-            console.error(error.response || error);
-            errorMessage("Error in adding transaction. Please try again.");
+            console.error("error : ",error);
+            errorMessage("Error occured . Please try again.");
         }
     };
 

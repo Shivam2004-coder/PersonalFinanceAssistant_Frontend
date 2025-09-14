@@ -5,10 +5,11 @@ const Form = (props) => {
 
     const { form, setForm , which} = props;
 
-    const [date, setDate] = useState(form.date);
+    // const [date, setDate] = useState(form.date);
     const dateInputRef = useRef(null);
     const handleDateChange = (e) => {
-        setDate(e.target.value);
+        // setDate(e.target.value);
+        setForm({ ...form, ["date"]: e.target.value });
     };
 
     const formatDateToInput = (date) => {
@@ -27,14 +28,14 @@ const Form = (props) => {
         }
     };
 
-    const { handleSubmit } = useAdd(form, setForm , which);
+    const { handleSubmit } = useAdd();
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSaveTransactionClick = () => {
-        handleSubmit();
+    const handleSaveTransactionClick = async () => {
+        await handleSubmit(form, setForm , which);
     }
 
 

@@ -126,7 +126,7 @@ const TimeRangeSearch = ({ form, setForm, which }) => {
           ◀ Previous
         </button>
 
-        <span className="font-bold text-gray-200">{dataPage}</span>
+        <span className="font-bold text-black">{dataPage}</span>
 
         <button
           className={`px-4 py-2 rounded-md font-semibold transition-colors ${

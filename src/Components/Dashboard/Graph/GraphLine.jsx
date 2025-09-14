@@ -99,7 +99,7 @@ const GraphLine = ({ graphData, which }) => {
       </button>
     </div>
   ) : (
-    <p className="text-sm">No expense data</p>
+    <p className="text-sm">No data</p>
   );
 };
 

@@ -15,7 +15,7 @@ const Dashboard = () => {
         <div className="text-center flex justify-between md:text-left m-2">
           <h2 className="text-2xl font-bold text-gray-900">Current Status</h2>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-2xl cursor-pointer"
+            className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl cursor-pointer"
             onClick={()=>setIsClicked(!isClicked)}
           >
             {isClicked ? "▲" : "▼"}
