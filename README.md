@@ -40,7 +40,6 @@ This repository contains the **frontend code** built with **React, Redux Toolkit
 
 # 1. Clone the repository
 git clone https://github.com/Shivam2004-coder/PersonalFinanceAssistant_Frontend.git
-cd PFAfrontend
 
 # 2. Install dependencies
 npm install
@@ -53,7 +52,7 @@ npm run dev
 
 
 ### 👤 Author
-Made with 💻 by Shivam Vaishnav
+Made by Shivam Vaishnav
 Feel free to reach out for collaboration or feedback.
 
 ### 📄 License
