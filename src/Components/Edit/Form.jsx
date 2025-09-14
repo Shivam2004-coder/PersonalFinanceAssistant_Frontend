@@ -5,10 +5,10 @@ const Form = (props) => {
 
     const { form, setForm , which} = props;
 
-    const [dateOfBirth, setdateOfBirth] = useState(new Date());
+    const [date, setDate] = useState(form.date);
     const dateInputRef = useRef(null);
-    const handleDateOfBirthChange = (e) => {
-        setdateOfBirth(e.target.value);
+    const handleDateChange = (e) => {
+        setDate(e.target.value);
     };
 
     const formatDateToInput = (date) => {
@@ -86,6 +86,7 @@ const Form = (props) => {
           <option value="Shopping">Shopping</option>
           <option value="Salary">Salary</option>
           <option value="Investment">Investment</option>
+          <option value="others">Other</option>
         </select>
 
         {/* Notes */}
@@ -103,8 +104,8 @@ const Form = (props) => {
         <input
           ref={dateInputRef}
           type="date"
-          value={formatDateToInput(dateOfBirth)}
-          onChange={handleDateOfBirthChange}
+          value={formatDateToInput(form.date)}
+          onChange={handleDateChange}
           className="w-full p-2 text-sm md:text-lg pr-12 text-black border-none bg-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none appearance-none"
         />
 
