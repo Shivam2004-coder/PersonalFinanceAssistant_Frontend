@@ -1,6 +1,6 @@
 # Personal Finance Assistant Frontend
 
-The **Personal Finance Assistant** is a smart platform designed to help users manage their finances seamlessly. It allows users to authenticate securely, track transactions, visualize financial data with graphs, and even parse PDFs to automatically extract expense details using Google Gemini AI.  
+The **Personal Finance Assistant** is a platform designed to help users manage their finances seamlessly. It allows users to authenticate securely, track transactions, visualize financial data with graphs, and even parse PDFs to automatically extract expense details using Google Gemini AI.  
 
 This repository contains the **frontend code** built with **React, Redux Toolkit, and Tailwind CSS**, connected to the Node.js + Express backend.
 
@@ -40,7 +40,7 @@ This repository contains the **frontend code** built with **React, Redux Toolkit
 
 # 1. Clone the repository
 git clone https://github.com/Shivam2004-coder/PersonalFinanceAssistant_Frontend.git
-cd techtribe-frontend
+cd PFAfrontend
 
 # 2. Install dependencies
 npm install
