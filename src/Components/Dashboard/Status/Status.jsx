@@ -11,10 +11,21 @@ const Status = () => {
   const loss = expense > income ? expense - income : 0;
 
   // Percentages
-  const expensePercent = Math.min((expense / income) * 100 , 100 );
-  const savingsPercent = Math.min((savings / income) * 100, 100);
-  // const savingsPercent = savings >= 0 ? (savings / income) * 100 : 0;
-  const overflowPercent = expense > income ? Math.min(((expense - income) / income) * 100 , 100 ) : 0;
+  const expensePercent = Math.min(
+    isNaN((expense / income) * 100) ? 0 : (expense / income) * 100,
+    100
+  );
+
+  const savingsPercent = Math.min(
+    isNaN((savings / income) * 100) ? 0 : (savings / income) * 100,
+    100
+  );
+
+  const overflowPercent =
+    expense > income
+      ? Math.min(isNaN(((expense - income) / income) * 100) ? 0 : ((expense - income) / income) * 100, 100)
+      : 0;
+
 
   return (
     <div className="flex flex-col justify-between">
