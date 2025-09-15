@@ -129,7 +129,7 @@ const Form = (props) => {
 
 
                 <p className="text-white mt-7">
-                    {isSignIn ? "Already Registered ? " : "New to Tech Tribe ? "}
+                    {isSignIn ? "Already Registered ? " : "New to Personal Finance Assistant ? "}
                     <span
                     onClick={() => setSignIn(!isSignIn)}
                     className="text-white hover:underline hover:text-blue-400 active:text-white cursor-pointer font-bold"

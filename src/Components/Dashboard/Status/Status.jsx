@@ -5,8 +5,8 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Status = () => {
   // Fetch data from Redux
-  const income = useSelector((store) => store.profile.income || 200);
-  const expense = useSelector((store) => store.profile.expense || 123);
+  const income = useSelector((store) => store.profile.income || 0);
+  const expense = useSelector((store) => store.profile.expense || 0);
   const savings = Math.max( income - expense , 0 );
   const loss = expense > income ? expense - income : 0;
 
