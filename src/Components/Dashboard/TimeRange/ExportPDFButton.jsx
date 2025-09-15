@@ -88,7 +88,7 @@ const ExportPDFButton = (props) => {
     return (
         <div>
             <button
-                className='bg-black p-2'
+                className='bg-black p-2 text-white'
                 onClick={handleClick}
             >
                 Export PDF
