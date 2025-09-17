@@ -6,7 +6,7 @@ This repository contains the **frontend code** built with **React, Redux Toolkit
 
 
 ### Video Description of Personal Finance Assistant:
---- click [here]. to watch the video
+--- click [here](https://youtu.be/GKfgFFRIe8g?si=TP77IrugOeX005QB). to watch the video
 
 
 ---
